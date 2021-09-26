@@ -14,19 +14,31 @@ namespace ExperimentalTask.Infrastructure
    public class TestInput
     {
 
-        public TestInput()
-        {
-
-        }
-
-
+       public TestInput(){}
 
        public string FuncCalculation(string request)
         {
 
             // If Null or Empty
             if (String.IsNullOrEmpty(request))            
-                return null;
+                return "Incorrect string";
+
+            // Get characters request 
+            char[] characters = request.ToCharArray();
+        
+
+            Regex r = new Regex("a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z");
+            Regex r2 = new Regex("A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z");
+          
+            // Regex r3 = new Regex("@|#|$|%|&|=|!|~|<|>|^");
+           //  Regex r3 = new Regex("@|#|$|%|&|!|<|>");
+
+
+            bool containsAny = r.IsMatch(request);
+            bool containsAny2 = r2.IsMatch(request);
+
+            if (containsAny || containsAny2)
+                return "Incorrect string";
 
             // Calculation
             string value = new DataTable().Compute(request, null).ToString();
@@ -102,7 +114,7 @@ namespace ExperimentalTask.Infrastructure
 
             // string[] splitArray = request.Split('+', '-', '*', '/');
 
-            // List<string> sss = Regex.Split(request, "+-*/").ToList();
+            // List<string> sss = Regex.Split(request, "+-").ToList();
 
             //foreach (var aa in splitArray)
             //{
