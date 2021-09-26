@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExperimentalTask.Infrastructure;
+using System;
 
 namespace ExperimentalTask.ConsoleUI
 {
@@ -6,7 +7,14 @@ namespace ExperimentalTask.ConsoleUI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            TestInput testInput = new TestInput();
+
+            string input = Console.ReadLine();
+
+            Console.WriteLine("Answer: " + testInput.FuncCalculation(input));
+
+            Console.ReadKey();
         }
     }
 }
