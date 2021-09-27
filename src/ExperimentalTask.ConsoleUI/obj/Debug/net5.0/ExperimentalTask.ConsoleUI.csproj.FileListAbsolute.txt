@@ -5,9 +5,11 @@ E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTas
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\ExperimentalTask.ConsoleUI.dll
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\ref\ExperimentalTask.ConsoleUI.dll
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\ExperimentalTask.ConsoleUI.pdb
+E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\Humanizer.dll
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\Microsoft.Extensions.Caching.Abstractions.dll
@@ -65,5 +67,3 @@ E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTas
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\obj\Debug\net5.0\ref\ExperimentalTask.ConsoleUI.dll
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\obj\Debug\net5.0\ExperimentalTask.ConsoleUI.pdb
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\obj\Debug\net5.0\ExperimentalTask.ConsoleUI.genruntimeconfig.cache
-E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\Humanizer.dll
-E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\src\ExperimentalTask.ConsoleUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll

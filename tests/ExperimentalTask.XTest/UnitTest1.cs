@@ -1,4 +1,5 @@
 using ExperimentalTask.Infrastructure;
+using Moq;
 using System;
 using Xunit;
 using Xunit.Abstractions;
@@ -14,28 +15,28 @@ namespace ExperimentalTask.XTest
         {
             _testOutputHelper = testOutputHelper;
         }
+
+
         
-        
-        //[Fact]
-        //[Theory]
-        //[InlineData("1+1","2")]
-        //[InlineData("3+3","6")]
-        //[InlineData("4+4","8")]
-        //public void Test1(string request , string result)
-        //{
-        //    TestInput testInput = new TestInput();
+        [Theory]
+        [InlineData("1+1+5-2", "5")]
+        [InlineData("3+3+4*2+1", "15")]
+        [InlineData("4+4/2", "6")]
+        public void Test1(string request, string result)
+        {
+            TestInput testInput = new TestInput();
 
-        //   var r = testInput.FuncCalculation(request);
+            var r = testInput.FuncCalculation(request);
 
-        //    Assert.IsType<string>(result);
-        //    Assert.Equal(result, r); 
+            Assert.IsType<string>(result);
+            Assert.Equal(result, r);
 
-        //}
+        }
 
 
 
         [Theory]
-        [MemberData(nameof(DataForTest1.GetData1), MemberType = typeof(DataForTest1))]
+        [MemberData(nameof(DataForTest.GetData1), MemberType = typeof(DataForTest))]
         public void Test2(string request, string result)
         {
             TestInput testInput = new TestInput();
@@ -50,7 +51,7 @@ namespace ExperimentalTask.XTest
 
         //[Theory(Skip = "eeeeeee")]
         [Theory]
-        [Trait("ui","cc")]
+        [Trait("category","one")]
         [ClassData(typeof(MemberClassData))]
         public void Test3(string request, string result)
         {
@@ -65,6 +66,9 @@ namespace ExperimentalTask.XTest
             Assert.Equal(result, r);
 
         }
+
+
+
 
     }
 }

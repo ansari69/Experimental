@@ -11,39 +11,42 @@ using System.Threading.Tasks;
 
 namespace ExperimentalTask.Infrastructure
 {
-   public class TestInput
+    public class TestInput
     {
 
-       public TestInput(){}
+        public TestInput() { }
 
-       public string FuncCalculation(string request)
+
+        public string FuncCalculation(string request)
         {
 
             #region Validate and Calculation
 
             // If Null or Empty
-            if (String.IsNullOrEmpty(request))            
+            if (String.IsNullOrEmpty(request))
                 return "Incorrect string";
 
             // Get characters request 
             char[] characters = request.ToCharArray();
-
-              if(characters[0] == '*'|| 
-                characters[0] == '/' || 
-                characters[0] == '+' || 
-                characters[0] == '-' ||
-                characters[0] == '.')
+            
+            // If first char in string equal * / + - . set error
+            if (characters[0] == '*' ||
+              characters[0] == '/' ||
+              characters[0] == '+' ||
+              characters[0] == '-' ||
+              characters[0] == '.')
                 return "Incorrect string";
 
-            for(int i =0; i<characters.Count()-1; i++)
+            // if two . in togOther
+            for (int i = 0; i < characters.Count() - 1; i++)
             {
-                if(characters[i] == '.' && characters[i+1] == '.')
+                if (characters[i] == '.' && characters[i + 1] == '.')
                     return "Incorrect string";
             }
 
             Regex r = new Regex("a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|x|y|z");
             Regex r2 = new Regex("A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z");
-          
+
             // Regex r3 = new Regex("@|#|$|%|&|=|!|~|<|>|^");
             Regex r3 = new Regex("@|#|&|!|<|>");
 
@@ -55,8 +58,13 @@ namespace ExperimentalTask.Infrastructure
             if (containsAny || containsAny2 || containsAny3)
                 return "Incorrect string";
 
+
             // Calculation
-            string value = new DataTable().Compute(request, null).ToString();
+            StringToRule stringToRule = new StringToRule();
+            string value = (stringToRule.computation(request)).ToString();
+
+
+           // string value = new DataTable().Compute(request, null).ToString();
 
             #endregion
 
@@ -214,5 +222,12 @@ namespace ExperimentalTask.Infrastructure
             #endregion
 
         }
-    }
+
+
+
+
+        
+
+
+    }   
 }

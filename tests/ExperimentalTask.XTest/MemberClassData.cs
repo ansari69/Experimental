@@ -11,19 +11,22 @@ namespace ExperimentalTask.XTest
     {
         public IEnumerator<object[]> GetEnumerator()
         {
-
-
-            yield return new object[] { "1+1", "2" };
-            yield return new object[] { "2+1", "3" };
-            yield return new object[] { "4+1", "5" };
-            // throw new NotImplementedException();
+            yield return new object[] { "3+1+5", "9" };
+            yield return new object[] { "5+5-2", "8" };
+            yield return new object[] { "4+1*6", "10" };
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-
             return GetEnumerator();
-           // throw new NotImplementedException();
         }
+
+
+
+        public IEnumerator<object> moqData()
+        {
+            yield return new object[] { };
+        }
+
     }
 }

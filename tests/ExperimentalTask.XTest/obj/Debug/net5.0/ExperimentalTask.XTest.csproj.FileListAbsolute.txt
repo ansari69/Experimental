@@ -148,3 +148,5 @@ E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\tests\ExperimentalT
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\tests\ExperimentalTask.XTest\obj\Debug\net5.0\ref\ExperimentalTask.XTest.dll
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\tests\ExperimentalTask.XTest\obj\Debug\net5.0\ExperimentalTask.XTest.pdb
 E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\tests\ExperimentalTask.XTest\obj\Debug\net5.0\ExperimentalTask.XTest.genruntimeconfig.cache
+E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\tests\ExperimentalTask.XTest\bin\Debug\net5.0\Castle.Core.dll
+E:\c# asp project\New Test\ExperimentalTask\ExperimentalTask\tests\ExperimentalTask.XTest\bin\Debug\net5.0\Moq.dll
